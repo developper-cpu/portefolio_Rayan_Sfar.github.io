@@ -1,0 +1,26 @@
+h1
+{
+    font-size:1.7em;
+}
+img
+{
+    text-align: left;
+}
+.lycée
+{
+    font-size: 1.3em;
+    background-color: gray;
+    text-align: left;
+}
+.bts
+{
+    font-size: 1.3em;
+    background-color: gray;
+    text-align: left;
+}
+img
+{
+    background-attachment: fixed;
+    padding-left: 20px;
+    margin: left 20px; 
+}
