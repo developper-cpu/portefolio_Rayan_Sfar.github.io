@@ -1,3 +1,4 @@
+
 h1
 {
     font-size:1.7em;
@@ -5,6 +6,9 @@ h1
 img
 {
     text-align: left;
+    width: 600px;
+    height: auto;
+    
 }
 .lycée
 {
