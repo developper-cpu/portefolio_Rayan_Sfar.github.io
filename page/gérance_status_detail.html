@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+    <meta charset="utf8">
+    <title>Portefolio_rayan_situation_pro_detail</title>
+    <link rel="stylesheet" href="../css/status.css">
+ </head>
+ <body>
+   <header><a href="../index.html" ><nav>accueil</nav></a>
+            <a href="page/parcours_scolaire.html"><nav>parcour scolaire</nav></a>
+                <a href="page/situation_pro.html"><nav>situation professionnel</nav></a>
+                <a href="page/certification.html"><nav>certification</nav></a>
+                <a href="page/tableau_competence.html"><nav>tableau de compétence</nav></a>
+                <a href="page/veille technologique.html"><nav>Veille technologique</nav></a>
+                
+        </header>
+    <h1>Gérance de status</h1>
+    <div class="projet">
+    <img src="../image/matrice_statut.png" alt="matrice_statut">
+    <p>L'objectif du projet était de pouvoir récupérer les différents statuts et relations des entités
+         afin d'évaluer la cohérence des statuts sur la base de la matrice ci dessus.Dans une logique de relation parent, enfant.</p>
+         <p><strong>C'est le parent:</strong></p>
+         <img src="../image/parent.png" alt="capture_parent">
+         <p><strong>C'est l'enfant:</strong></p> 
+         <img src="../image/enfant.png" alt="capture_enfant">
+
+       <p> Il faut donc une cohérence entre le parent et l'enfant.Par exemple : un statut FINALISATION 
+         peut être associé à un statut FINALISATION, EN COURS ou EN ATTENTE, mais pas à un statut BROUILLON.
+    Par conséquent, lorsqu'un statut ne peut pas être associé à un autre statut ou n'est pas vraiment recommandé, deux types
+     de messages s'affichent en fonction de la situation:</p>
+<p>-Un message de blocage s'affiche par exemple pour le statut Running. En effet, celui-ci ne peut être associé à aucun autre statut.</p>
+<p>-Un message d'avertissement s'affiche lorsqu'un statut n'est pas recommandé avec un autre. Mais qu'il est toutefois possible de l'enregistrer.</p>
+
+<p> <strong>Afin de pouvoir de pouvoir récupérer les différents status et relation des entités il faut tout d'abord remplacer les noms des status par des global status 
+   comme le montre les images ci-dessous:</strong></p>
+   <img src="../image/remplacement_1.png" alt="remplacement_status">
+   <img src="../image/remplacement_2.png" alt="remplacement_status" >
+   <p><strong>Ensuite grâce au code ci dessous:</strong> </p>
+   <img src="../image/matrice.png" alt="matrice">
+   <img src="../image/code.png" alt="code_status">
+   <p><strong>On récupére le status:</strong></p>
+   <img src="../image/recuperation_status.png" alt="récupération_status">
+   <br>
+   <p>Afin que le code puisse être transmis a powerapp: Il faut crée 2 type de plugin pour toutes les entités, create et update afin d'assurer une transition 
+        du code javascript vers power app.</p>
+        <img src="../image/Create_update.png" alt="Create_update" >
+</div>
+ </body>   
+</html>
