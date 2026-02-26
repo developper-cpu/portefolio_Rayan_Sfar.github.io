@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --noir: #0a0a0f;
+  --blanc: #f5f3ee;
+  --or: #c9a84c;
+  --or-clair: #e8d5a3;
+  --gris: #8a8a8a;
+  --gris-fonce: #1e1e26;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: var(--noir);
+  color: var(--blanc);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300; line-height: 1.7;
+}
+
+header {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center;
+  padding: 0 3rem; height: 64px;
+  background: rgba(10, 10, 15, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+header a {
+  text-decoration: none; color: var(--gris);
+  font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0 1.2rem; height: 64px;
+  display: flex; align-items: center;
+  transition: color 0.3s; position: relative;
+}
+
+header a::after {
+  content: ''; position: absolute;
+  bottom: 0; left: 1.2rem; right: 1.2rem;
+  height: 2px; background: var(--or);
+  transform: scaleX(0); transition: transform 0.3s;
+}
+
+header a:hover { color: var(--or); }
+header a:hover::after { transform: scaleX(1); }
+header a:first-child { color: var(--or); }
+header a:first-child::after { display: none; }
+header nav { display: contents; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 900;
+  padding: 5rem 3rem 1rem;
+  background: linear-gradient(135deg, var(--blanc) 50%, var(--or));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* TABLE IMAGE */
+.tableau-wrapper {
+  padding: 2rem 3rem 5rem;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+img {
+  width: 100%; max-width: 900px;
+  border-radius: 8px;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  display: block;
+}
+
+footer {
+  padding: 2rem 3rem;
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+  display: flex; gap: 2rem;
+}
+
+footer a {
+  color: var(--gris); font-size: 0.78rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  text-decoration: none; transition: color 0.2s;
+}
+
+footer a:hover { color: var(--or); }
+a { color: var(--or); text-decoration: none; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  header { padding: 0.5rem 1rem; flex-wrap: wrap; height: auto; }
+  header a { padding: 0.4rem 0.5rem; height: auto; font-size: 0.68rem; }
+  h1, .tableau-wrapper { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
