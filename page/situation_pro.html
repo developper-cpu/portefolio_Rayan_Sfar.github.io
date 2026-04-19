@@ -1,68 +1,134 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/situation_pro.css">
-        <title>Portefolio situation professionnel</title>
-    </head>
-    <body>
-           <header><a href="../index.html" ><nav>accueil</nav></a>
-            <a href="parcours_scolaire.html"><nav>parcour scolaire</nav></a>
-                <a href="situation_pro.html"><nav>situation professionnel</nav></a>
-                <a href="certification.html"><nav>certification</nav></a>
-                <a href="tableau_competence.html"><nav>tableau de compétence</nav></a>
-                <a href="veille technologique.html"><nav>Veille technologique</nav></a>
-        </header>
-<h1> Situation professionnel</h1>
-<div class="professionnel">
-    <img src="" alt="">
-    <h2>GLPI</h2>
-    <h3>Contexte</h3>
-    <p> Un de nos professeur de réseau nous avait donnée un tp dont le but étais de découvrir et de se familiarisé avec GLPI. </p>
-    <h3>Réalisation</h3>
-    <p>Tout d'abord je devais installer GLPI, une fois l'installation faite je me suis familiariser avec GLPI, notamment en créant des tickets </p>
-    <ul>Besoin
-        <li>Il faut installer GLPI</li>
-        <li>Il faut installer maria db</li>
-    </ul>
-</div>
-<div class="professionnel">
-    <img src="" alt="">
-    <h2>Maison jungle</h2>
-    <h3>Contexte</h3>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Situation professionnelle — Rayan Sfar</title>
+</head>
+<body>
 
-    <p> J'étais en stage chez Novéo Agency quand je devais concevoir un site pour une entreprise qui se nommait la maison jugle elle vent des plantes, j'ai donc reçu un cahier des charges et j'ai commencer a concevoir le site.</p>
-    <h3>Réalisation</h3>
-    
-    <p>J'ai crée la maison jungle avec react js, j'ai crée plusieurs composant afin que le site puisse répondre aux attentes de la maison jungle.</p>
-    
-    <ul>  Besoins react js
-        <li>Il faut installer Node js</li>
-        <li>Il faut installer un gestionnaire de packet npm</li>
-    </ul>
-</div>
+<header>
+  <a href="../index.html">RS.</a>
+  <a href="parcours_scolaire.html"><nav>Parcours scolaire</nav></a>
+  <a href="situation_pro.html"><nav>Situation professionnelle</nav></a>
+  
+  <a href="tableau_competence.html"><nav>Compétences</nav></a>
+  <a href="veille_technologique.html"><nav>Veille technologique</nav></a>
+</header>
 
-<div class="professionnel">
-    <img src="" alt="" >
-    <h2>Gérance de status </h2>
-    <h3>Contexte</h3>
-<p>J'étais en stage a édumotive, a édumotive ils utilisaient power app une application qui permettait de crée des tables. Ces tables 
-    avaient donc différents status qui pouvait
-    être: DRAFT(début),Finalizing(fin),Running(mise en production),close(annulation),Stand by(pause). L 'objectif du projet était de pouvoir récupérer les différents 
-    statuts et relations des entités afin d'évaluer la cohérence des statuts sur la base d'une matrice.Dans une logique de relation parent, enfant:En créant une fonction</p>
-    <h3>Réalisation</h3>
-    <p>J'ai donc contribuée a crée une fonction en utilisant javascript, nous avons donc pu concevoir une fonction 
-        qui as pu récupérer le status mais qui n'as malheuressement pas pu s'assurer de la cohérence des status</p>
-    <ul>Besoin fonction javascript
-    <li>Changer le nom de colonne de tout les status pour les mettre en global status</li>
-    <li> On devait utiliser xrmtoolbox pour crée 2 type de plugin pour toutes les entités, create et update afin d'assurer une transition 
-        du code javascript vers power app.</li>
-<a href="gérance_status_detail.html">en savoir plus</a>
-</ul>
-</div>
-  <footer>
-        <a href="">mention légale</a>
-        <a href=""> politique de confidentialité</a>
-    </footer>
-    </body>
-    </html>
+<main class="page-content">
+  <p class="section-label">Projets & Stages</p>
+  <h1 class="page-title">Situation professionnelle</h1>
+
+  <div class="grid-2">
+
+    <!-- GLPI -->
+    <div class="projet-card">
+      <div class="projet-card-header">
+        <div class="projet-icon">🖥️</div>
+        <div>
+          <h2>GLPI</h2>
+          <span class="tag">BTS SIO — TP 1ère année</span>
+        </div>
+      </div>
+      <div class="projet-card-body">
+        <p class="context-label">Contexte</p>
+        <p>Un de nos professeurs de réseau nous avait donné un TP dont le but était de découvrir et de se familiariser avec GLPI, un gestionnaire de parc informatique.</p>
+        <p class="context-label">Réalisation</p>
+        <p>Installation de GLPI et de MariaDB, puis prise en main de l'outil — notamment via la création et gestion de tickets d'incidents.</p>
+        <div class="tag-list">
+          <span class="tag">GLPI</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">Réseau</span>
+          <span class="tag">Ticketing</span>
+        </div>
+        <a href="situation_pro/GLPI.html" class="btn-detail">En savoir plus →</a>
+      </div>
+    </div>
+
+    <!-- Maison Jungle -->
+    <div class="projet-card">
+      <div class="projet-card-header">
+        <div class="projet-icon">🌿</div>
+        <div>
+          <h2>Maison Jungle</h2>
+          <span class="tag">Stage — Novéo Agency</span>
+        </div>
+      </div>
+      <div class="projet-card-body">
+        <p class="context-label">Contexte</p>
+        <p>En stage chez Novéo Agency, j'ai dû concevoir un site web pour la Maison Jungle, une entreprise de vente de plantes, à partir d'un cahier des charges.</p>
+        <p class="context-label">Réalisation</p>
+        <p>Création du site web avec React.js, en développant plusieurs composants pour répondre aux exigences du client.</p>
+        <div class="tag-list">
+          <span class="tag">React.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">npm</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <a href="situation_pro/maison_jungle.html" class="btn-detail">En savoir plus →</a>
+      </div>
+    </div>
+
+    <!-- Gérance de status -->
+    <div class="projet-card">
+      <div class="projet-card-header">
+        <div class="projet-icon">⚙️</div>
+        <div>
+          <h2>Gérance de statuts</h2>
+          <span class="tag">Stage — Édumotive</span>
+        </div>
+      </div>
+      <div class="projet-card-body">
+        <p class="context-label">Contexte</p>
+        <p>Chez Édumotive, j'ai travaillé sur Power Apps. L'objectif était de récupérer les statuts et relations des entités (DRAFT, Finalizing, Running, Close, Stand By) pour évaluer leur cohérence via une matrice parent-enfant.</p>
+        <p class="context-label">Réalisation</p>
+        <p>Contribution à une fonction JavaScript permettant de récupérer les statuts, et création de plugins via XrmToolBox pour assurer la transition vers Power Apps.</p>
+        <div class="tag-list">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Power Apps</span>
+          <span class="tag">XrmToolBox</span>
+        </div>
+        <a href="situation_pro/gérance_status_detail.html" class="btn-detail">En savoir plus →</a>
+      </div>
+    </div>
+
+    <!-- Progiciel ME -->
+    <div class="projet-card">
+      <div class="projet-card-header">
+        <div class="projet-icon">📚</div>
+        <div>
+          <h2>Progiciel ME</h2>
+          <span class="tag">Projet personnel</span>
+        </div>
+      </div>
+      <div class="projet-card-body">
+        <p class="context-label">Contexte</p>
+        <p>Passionné par le milieu de l'édition de livre, j'ai élaboré un progiciel de gestion dédié aux maisons d'édition.</p>
+        <p class="context-label">Réalisation</p>
+        <p>Développement en HTML, CSS et PHP, avec création d'une API PHP/JSON pour optimiser les performances du progiciel.</p>
+        <div class="tag-list">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">PHP</span>
+          <span class="tag">JSON</span>
+          <span class="tag">API REST</span>
+        </div>
+        <a href="situation_pro/progiciel_me_detail.html" class="btn-detail">En savoir plus →</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <a href="#">Mentions légales</a>
+  <a href="#">Politique de confidentialité</a>
+  <a href="https://www.linkedin.com/in/rayan-sfar-492581329/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" title="Mon LinkedIn">
+    <img src="image/linkedln.png" alt="LinkedIn">
+  </a>
+</footer>
+
+</body>
+</html>
