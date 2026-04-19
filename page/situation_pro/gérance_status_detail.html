@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/main.css">
+  <title>Gérance de statuts — Rayan Sfar</title>
+</head>
+<body>
+
+<header>
+  <a href="../../index.html">RS.</a>
+  <a href="../parcours_scolaire.html"><nav>Parcours scolaire</nav></a>
+  <a href="../situation_pro.html"><nav>Situation professionnelle</nav></a>
+  
+  <a href="../veille_technologique.html"><nav>Veille technologique</nav></a>
+  <a href="../tableau_competence.html"><nav>Compétences</nav></a>
+</header>
+
+<main class="page-content">
+  <a href="../situation_pro.html" style="font-size:0.8rem;color:var(--accent);text-decoration:none;">← Retour aux projets</a>
+
+  <p class="section-label" style="margin-top:1.5rem;">Stage — Édumotive</p>
+  <h1 class="page-title">Gérance de statuts</h1>
+
+  <div class="intro-block">
+    <p>L'objectif du projet était de récupérer les différents statuts et relations des entités afin d'évaluer leur cohérence sur la base d'une matrice, dans une logique de relation parent-enfant.</p>
+  </div>
+
+  <div class="detail-section">
+    <h2>Matrice des statuts</h2>
+    <p>Les entités pouvaient avoir les statuts suivants : <strong>DRAFT</strong> (début), <strong>Finalizing</strong> (fin), <strong>Running</strong> (mise en production), <strong>Close</strong> (annulation), <strong>Stand By</strong> (pause).</p>
+    <img src="../image/matrice_statut.png" alt="Matrice des statuts" style="margin-top:1rem;">
+
+    <p style="margin-top:1.2rem;">Il faut une cohérence entre le statut parent et enfant. Par exemple, un statut FINALISATION peut être associé à un statut FINALISATION, EN COURS ou EN ATTENTE, mais pas à BROUILLON.</p>
+    <p>Deux types de messages s'affichent selon la situation :</p>
+    <ul class="need-list">
+      <li>Un <strong>message de blocage</strong> pour des statuts incompatibles (ex. Running)</li>
+      <li>Un <strong>message d'avertissement</strong> lorsqu'un statut n'est pas recommandé mais reste enregistrable</li>
+    </ul>
+  </div>
+
+  <div class="detail-section">
+    <h2>Relation parent / enfant</h2>
+    <div class="img-grid">
+      <div>
+        <p style="margin-bottom:0.5rem;font-size:0.8rem;color:var(--accent);letter-spacing:0.1em;">PARENT</p>
+        <img src="../image/parent.png" alt="Capture parent">
+      </div>
+      <div>
+        <p style="margin-bottom:0.5rem;font-size:0.8rem;color:var(--accent);letter-spacing:0.1em;">ENFANT</p>
+        <img src="../image/enfant.png" alt="Capture enfant">
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h2>Remplacement des noms de statuts</h2>
+    <p>Avant de récupérer les statuts, il faut remplacer leurs noms par des <em>global status</em> :</p>
+    <div class="img-grid">
+      <img src="../image/remplacement_1.png" alt="Remplacement statuts 1">
+      <img src="../image/remplacement_2.png" alt="Remplacement statuts 2">
+    </div>
+  </div>
+
+  <div class="detail-section">
+    <h2>Code et récupération des statuts</h2>
+    <div class="img-grid">
+      <img src="../image/matrice.png" alt="Matrice code">
+      <img src="../image/code.png" alt="Code status">
+    </div>
+    <img src="../image/recuperation_status.png" alt="Récupération du statut" style="margin-top:1rem;">
+  </div>
+
+  <div class="detail-section">
+    <h2>Intégration Power Apps</h2>
+    <p>Afin que le code puisse être transmis à Power Apps, il faut créer 2 types de plugin pour toutes les entités (<strong>create</strong> et <strong>update</strong>) afin d'assurer la transition du code JavaScript vers Power Apps.</p>
+    <img src="../image/Create_update.png" alt="Create et Update plugins" style="margin-top:1rem;">
+  </div>
+</main>
+
+<footer>
+  <a href="#">Mentions légales</a>
+  <a href="#">Politique de confidentialité</a>
+  <a href="https://www.linkedin.com/in/rayan-sfar-492581329/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" title="Mon LinkedIn">
+    <img src="../image/linkedln.png" alt="LinkedIn">
+  </a>
+</footer>
+
+</body>
+</html>
