@@ -1,53 +1,87 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/parcours_scolaire.css">
-        <title>Portefolio parcour</title>
-    </head>
-    <body>
-        <header><a href="../index.html" ><nav>accueil</nav></a>
-            <a href="parcours_scolaire.html"><nav>parcour scolaire</nav></a>
-                <a href="situation_pro.html"><nav>situation professionnel</nav></a>
-                <a href="certification.html"><nav>certification</nav></a>
-                <a href="tableau_competence.html"><nav>tableau de compétence</nav></a>
-                <a href="veille technologique.html"><nav>Veille technologique</nav></a>
-        </header>
-<h1>Parcour scolaire</h1>
-<img src="image/charlie.jpg" alt="lycée charlie chaplin">
-<div class="lycée">
-    <p> J'ai étudié au lycée charlie chaplin de 2021 a 2024. J'ai suivi dès la première la spécialité stmg pour le baccalauréat stmg. </p>
-<ul>Mes spécialités étais:
-<li> la science de gestion</li>
-<li>le management</li>
-<li>l'économie et droit</li>
-</ul>    
-<p>En terminal j'étais en spécialités gestion finance toujours en stmg avec les mêmes spécialités mais en plus avec la gestion finance, j'ai donc obtenu un bac stmg en spécialité gestion finance en 2024.</p>
-</div> 
-        <img src="image/jacque_brel.jpg" alt="lycée jacque brel">
-    <div class="bts">
-       
-    <p> J'étudie actuellement au lycée jacque brel , ou je suis en train de pousuivre un BTS SIO, ce bts m'a appris:</p>
-<ul>Les bases du réseau
-    <li>Le routage</li> 
-    <li>L'analyse de trame</li>    
-    <li>L'adressage ip</li>
-    <li>gestion d'incident</li>
-    </ul>  
-    <ul>Les bases en développement
-<li>html</li>
-     <li>css</li>
-     <li>javascript</li>
-     <li>c#</li> 
-     <li>php</li>
-     <li>python</li>
-     <li>sql</li>
-    </ul> 
-    <p>J'ai également acquis des connaissances en cybersécurité.</p>
-</div>
-    <footer>
-        <a href="">mention légale</a>
-        <a href=""> politique de confidentialité</a>
-    </footer>
-    </body>
-    </html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Parcours scolaire — Rayan Sfar</title>
+</head>
+<body>
+
+<header>
+  <a href="../index.html">RS.</a>
+  <a href="parcours_scolaire.html"><nav>Parcours scolaire</nav></a>
+  <a href="situation_pro.html"><nav>Situation professionnelle</nav></a>
+  
+  <a href="tableau_competence.html"><nav>Compétences</nav></a>
+  <a href="veille_technologique.html"><nav>Veille technologique</nav></a>
+</header>
+
+<main class="page-content">
+  <p class="section-label">Formation</p>
+  <h1 class="page-title">Parcours scolaire</h1>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <p class="timeline-year">2021 – 2024</p>
+      <h3>Baccalauréat STMG — Spécialité Gestion Finance</h3>
+      <p>Lycée Charlie Chaplin</p>
+      <p style="margin-top:0.6rem;">J'ai suivi dès la première la spécialité STMG pour le baccalauréat. En terminale, j'étais en spécialité Gestion Finance. J'ai obtenu mon bac STMG en 2024.</p>
+      <div class="skill-list">
+        <span class="tag">Science de gestion</span>
+        <span class="tag">Management</span>
+        <span class="tag">Économie & Droit</span>
+        <span class="tag">Gestion Finance</span>
+      </div>
+      <img src="image/charlie.jpg" alt="Lycée Charlie Chaplin" style="margin-top:1rem; width:100%; max-width:420px; border-radius:6px; border:1px solid var(--border);">
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <p class="timeline-year">2024 – présent</p>
+      <h3>BTS SIO — Option SLAM</h3>
+      <p>Lycée Jacques Brel</p>
+      <p style="margin-top:0.6rem;">Je poursuis actuellement un BTS Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers. Cette formation m'a apporté des compétences solides en développement et en réseau.</p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.2rem;">
+        <div class="card">
+          <p class="context-label">Réseau</p>
+          <div class="skill-list">
+            <span class="tag">Routage</span>
+            <span class="tag">Analyse de trame</span>
+            <span class="tag">Adressage IP</span>
+            <span class="tag">Gestion d'incident</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="context-label">Développement</p>
+          <div class="skill-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">C#</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:1rem; color:var(--text-muted); font-size:0.9rem;">J'ai également acquis des connaissances en cybersécurité.</p>
+      <img src="image/jacque_brel.jpg" alt="Lycée Jacques Brel" style="margin-top:1rem; width:100%; max-width:420px; border-radius:6px; border:1px solid var(--border);">
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <a href="#">Mentions légales</a>
+  <a href="#">Politique de confidentialité</a>
+  <a href="https://www.linkedin.com/in/rayan-sfar-492581329/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" title="Mon LinkedIn">
+    <img src="image/linkedln.png" alt="LinkedIn">
+  </a>
+</footer>
+
+</body>
+</html>
