@@ -1,24 +1,252 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/tableau_competence.css">
-        <title>Portefolio tableau de compétence</title>
-    </head>
-    <body>
-           <header><a href="../index.html" ><nav>accueil</nav></a>
-            <a href="parcours_scolaire.html"><nav>parcour scolaire</nav></a>
-                <a href="situation_pro.html"><nav>situation professionnel</nav></a>
-                <a href="certification.html"><nav>certification</nav></a>
-                <a href="tableau_competence.html"><nav>tableau de compétence</nav></a>
-                <a href="veille technologique.html"><nav>Veille technologique</nav></a>
-        </header>
-        <h1>Tableau de compétence</h1>
-        
-        <embed src="image/tableau de compétence.pdf" width="100%" height="600px" type="application/pdf">
-          <footer>
-        <a href="">mention légale</a>
-        <a href=""> politique de confidentialité</a>
-    </footer>
-    </body>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Tableau de compétences — Rayan Sfar</title>
+  <style>
+    .tc-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    .tc-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem 2rem;
+      margin-bottom: 2.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem 1.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .tc-meta span { color: var(--text); font-weight: 500; }
+    .tc-meta a { color: var(--accent); text-decoration: none; }
+    .tc-meta a:hover { text-decoration: underline; }
+
+    table.tc {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+      min-width: 860px;
+    }
+
+    table.tc th, table.tc td {
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--border);
+      vertical-align: middle;
+      line-height: 1.4;
+    }
+
+    table.tc thead tr:first-child th {
+      background: var(--surface2);
+      color: var(--accent);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    table.tc thead tr:nth-child(2) th {
+      background: rgba(200,169,110,0.06);
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      font-weight: 400;
+      text-align: center;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    table.tc tr.section-row td {
+      background: var(--surface2);
+      color: var(--accent);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.6rem 0.9rem;
+    }
+
+    table.tc td.project-name {
+      font-family: 'Playfair Display', serif;
+      color: var(--text);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    table.tc td.check {
+      text-align: center;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    table.tc td.empty {
+      text-align: center;
+      color: #333;
+    }
+
+    table.tc tbody tr:hover td {
+      background: rgba(200,169,110,0.04);
+    }
+
+    .comp-header { max-width: 120px; }
+
+    .option-badge {
+      display: inline-block;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html">RS.</a>
+  <a href="parcours_scolaire.html"><nav>Parcours scolaire</nav></a>
+  <a href="situation_pro.html"><nav>Situation professionnelle</nav></a>
+  
+  <a href="tableau_competence.html"><nav>Compétences</nav></a>
+  <a href="veille_technologique.html"><nav>Veille technologique</nav></a>
+</header>
+
+<main class="page-content">
+  <p class="section-label">BTS SIO — SLAM — Session 2026</p>
+  <h1 class="page-title">Tableau de compétences</h1>
+
+  <div class="tc-meta">
+    <div>Nom et prénom : <span>Rayan Sfar</span></div>
+    <div>N° candidat : 2249693208<span></span></div>
+    <div>Centre de formation : <span>Lycée Jacques Brel, Vénissieux</span></div>
+    <div>Option : <span>SLAM <span class="option-badge">✓</span></span></div>
+    <div style="grid-column:1/-1;">Portfolio : <a href="https://developper-cpu.github.io/portefolio_Rayan_Sfar.github.io/" target="_blank">developper-cpu.github.io/portefolio_Rayan_Sfar.github.io/</a></div>
+  </div>
+
+  <div class="tc-wrapper">
+    <table class="tc">
+      <thead>
+        <tr>
+          <th rowspan="2" style="min-width:160px; text-align:left;">Réalisations professionnelles</th>
+          <th colspan="6">Compétences mises en œuvre</th>
+        </tr>
+        <tr>
+          <th class="comp-header">Gérer le patrimoine informatique</th>
+          <th class="comp-header">Répondre aux incidents et demandes d'assistance</th>
+          <th class="comp-header">Développer la présence en ligne</th>
+          <th class="comp-header">Travailler en mode projet</th>
+          <th class="comp-header">Mettre à disposition un service informatique</th>
+          <th class="comp-header">Organiser son développement professionnel</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="section-row">
+          <td colspan="7">Réalisations en cours de formation</td>
+        </tr>
+        <tr>
+          <td class="project-name">GLPI</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="empty">—</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td class="project-name">Dolibar</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="empty">—</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td class="project-name">Projet bibliothèque</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td class="project-name">SGRC</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td class="project-name">Progiciel ME</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="7">Réalisations en milieu professionnel — 1ère année</td>
+        </tr>
+        <tr>
+          <td class="project-name">Maison Jungle</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+
+        <tr class="section-row">
+          <td colspan="7">Réalisations en milieu professionnel — 2ème année</td>
+        </tr>
+        <tr>
+          <td class="project-name">Campus IT</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+        <tr>
+          <td class="project-name">Fonction statuts</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="empty">—</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+          <td class="check">✓</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <a href="#">Mentions légales</a>
+  <a href="#">Politique de confidentialité</a>
+  <a href="https://www.linkedin.com/in/rayan-sfar-492581329/" target="_blank" rel="noopener noreferrer" class="footer-linkedin" title="Mon LinkedIn">
+    <img src="image/linkedln.png" alt="LinkedIn">
+  </a>
+</footer>
+
+</body>
 </html>
